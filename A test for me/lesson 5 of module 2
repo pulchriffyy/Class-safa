@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+            height:100%;
+            margin:0;
+            font-size:16px;
+            font-family: "Lato", sans-serif;
+            font-weight:400;
+            line-height:1.8em;
+            color:#ffffff;
+            background-color: #851010;
+            }
+            .topnav {
+            overflow: hidden;
+            background-color: #252a71;
+            }
+            .topnav a {
+            float: left;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+            .topnav a:hover{
+                background-color: brown;
+            }
+            .pimg1, .pimg2, .pimg3 {
+                position:relative;
+                opacity: 0.70;
+                background-position: center;
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-attachment: fixed;
+                }
+                .pimg1 {
+                background-image:url('https://i.pinimg.com/736x/9e/32/7c/9e327c2e9d6acc64310acc1ee3cdbe05.jpg');
+                min-height:100%;
+                }
+                .pimg2 {
+                background-image:url('https://i.pinimg.com/1200x/8e/6f/0d/8e6f0dfb918303b5193c4f903c2843d0.jpg');
+                min-height:400px;
+                }
+                .pimg3 {
+                background-image:url('https://i.pinimg.com/736x/f3/ee/be/f3eebe5b5daac9fb9a84a2008ecd22a6.jpg');
+                min-height:400px;
+                }
+                .ptext {
+                    position:absolute;
+                    top:50%;
+                    width: 100%;
+                    text-align:center;
+                    color:#ffffff;
+                    font-size:27px;
+                    letter-spacing:8px;
+                    text-transform:uppercase;
+                    }
+                    .ptext.border {
+                    background-color:#111;
+                    color:#fff;
+                    padding: 20px;
+                    }
+                    .ptext.border.trans {
+                    background-color: transparent;
+                    }
+                    @media (max-width: 568px) {
+                    .pimg1, .pimg2, .pimg3 {
+                    background-attachment:scroll;
+                    }
+                    }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    </div><br>
+    <span class="border trans" style="font-size:40px;">
+    <center>Muang lao </center>
+
+    </span><br>
+    <section>
+        <h2>
+            The country of a million elephants ~ Laos
+        </h2>
+        <p> Laos, officially the Lao People's Democratic Republic, is the only landlocked country in Southeast Asia. Known for its mountainous terrain, lush jungles, and the Mekong River, it offers a tranquil, slow-paced alternative to its more developed neighbors. Its culture is deeply rooted in Theravada Buddhism and ancient traditions, and it is famously referred to as the "Land of a Million Elephants".</p>
+    </section>
+    <div class="pimg3">
+    <div class="pimg3">
+    <div class="ptext">
+    <span class="border trans">Vang vieng, Laos.</span>
+    </div>
+    </div>
+    <section class="section section-dark">
+    <span>All @copy rights reserved by Sarah S Tayyab</span>
+    </section>
+ <section id="about">
+<p><img src="https://cdn.sanity.io/images/nxpteyfv/goguides/dbba1c52390e369f84f5798e949e17793ce6a7e2-1600x1066.jpg" style="width: 170px; height: 170px; margin-left:15px; float: right;">
+Laos (Lao: [lǎːos]), officially the Lao People's Democratic Republic, is a landlocked, mountainous country in Southeast Asia, bordered by Myanmar, China, Vietnam, Cambodia, and Thailand. It is a nation deeply rooted in Theravada Buddhism, which heavily influences daily life, art, and the relaxed, polite culture of its roughly 7.9 million people. Known historically as the "Kingdom of a Million Elephants" (Lan Xang), it has a history dating back to 1353 with its origins in the city of Luang Prabang, a UNESCO World Heritage site known for its stunning architecture and early morning alms-giving ceremony.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Vientiane_-_Patuxai_-_0003.jpg/1280px-Vientiane_-_Patuxai_-_0003.jpg" style="width:170px; height: 170px; float: left; margin-left:15px;">
+ The country is characterized by lush, tropical landscapes, the Mekong River, and dramatic limestone karsts, often featuring attractions like the turquoise waters of Kuang Si Waterfall, the massive Buddha Park, or the ancient, mysterious Plain of Jars. It is a popular destination for eco-tourism and adventure, offering trekking, kayaking, and exploration of rural villages, and is known for its quiet, unassuming charm compared to its neighbors. The cuisine is vibrant and spicy, famous for sticky rice (khao niao) and the national salad, larb. A person visiting Laos might explore the capital, Vientiane, with its iconic That Luang stupa, and explore the country’s, which is often considered one of the most relaxed travel destinations in Southeast Asia.</p>
+ </section>
+ </div>
+ </body>
+</html>

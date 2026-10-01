@@ -1,0 +1,45 @@
+'jersey number = 14, date of birth= june 4th, place of birth = stolkhom - sweden, age = 28 years, teams played for= current, arsenal, previous 7 senior professional clubs : IF Brommapojkarna: 2015–2017   Brighton & Hove Albion: 2018–2021   FC St. Pauli (loan): 2019–2020   Swansea City (loan): 2020–2021   Coventry City: 2021 (loan),   then permanently from 2021–2023   Sporting CP: 2023–2025, 2025 - 2026 arsenal')
+                
+                jersey number = 7  date of birth = September 5, 2001   place of birth = Ealing, London - England  age = 24 years  teams played for = current, Arsenal FC  )
+                
+                jersey number = 41, date of birth= january 14th, place of birth = kingston upon thames - england, age = 27 years, teams played for= current, arsenal, previous senior professional clubs : west ham united: 2015–2023  )
+                
+                jersey number = 2, date of birth= march 24th, place of birth = bondy - france, age = 25 years, teams played for= current, arsenal, previous senior professional clubs : saint-étienne: 2018–2019, saint-étienne (loan): 2019–2020, nice (loan): 2021, marseille (loan): 2021–2022  )
+                
+                jersey number = 6, date of birth= december 19th, place of birth = são paulo - brazil, age = 28 years, teams played for= current, arsenal, previous senior professional clubs : avaí: 2016–2017, lille: 2017–2020, troyes (loan): 2017–2018, dinamo zagreb (loan): 2018  )
+                
+               
+                jersey number = 29, date of birth= june 11th, place of birth = aachen - germany, age = 27 years, teams played for= current, arsenal, previous senior professional clubs : bayer leverkusen: 2016–2020, chelsea: 2020–2023  )
+                jersey number = 1, date of birth= september 15th, place of birth = barcelona - spain, age = 30 years, teams played for= current, arsenal, previous senior professional clubs : blackburn rovers: 2012–2019, southport (loan): 2014–2015, brentford: 2019–2024 (loan from brentford to arsenal in 2023-2024)  )
+
+                jersey number = 4, date of birth= october 8th, place of birth = poole - england, age = 28 years, teams played for= current, arsenal, previous senior professional clubs : brighton & hove albion: 2016–2021, newport county (loan): 2017–2018, peterborough united (loan): 2019, leeds united (loan): 2019–2020  )
+
+
+                jersey number = 12, date of birth= june 17th, place of birth = utrecht - netherlands, age = 24 years, teams played for= current, arsenal, previous senior professional clubs : ajax: 2020–2023  )
+
+
+                jersey number = 11, date of birth= june 18th, place of birth = guarulhos - brazil, age = 24 years, teams played for= current, arsenal, previous senior professional clubs : ituano: 2018–2019  )
+
+
+                jersey number = 19, date of birth= december 4th, place of birth = maasmechelen - belgium, age = 31 years, teams played for= current, arsenal, previous senior professional clubs : genk: 2012–2019, lommel united (loan): 2012–2013, westerlo (loan): 2013–2014, oud-heverlee leuven (loan): 2014–2015, brighton & hove albion: 2019–2023  )
+
+
+                jersey number = 9, date of birth= april 3th, place of birth = são paulo - brazil, age = 29 years, teams played for= current, arsenal, previous senior professional clubs : palmeiras: 2015–2016, manchester city: 2017–2022  )
+
+
+                jersey number = 33, date of birth= may 19th, place of birth = rome - italy, age = 24 years, teams played for= current, arsenal, previous senior professional clubs : roma: 2020–2022, genoa (loan): 2022, basel: 2022–2023, bologna: 2023–2024  )
+
+
+                jersey number = 36, date of birth= february 2th, place of birth = san sebastián - spain, age = 27 years, teams played for= current, arsenal, previous senior professional clubs : real sociedad: 2019–2025  )
+
+
+
+
+
+                role = head coach, date of birth= march 26th, place of birth = san sebastián - spain, age = 44 years, arsenal career = 2019–present, previous managerial roles : manchester city (assistant coach): 2016–2019  )
+
+
+                role = former head coach, date of birth= november 3rd, place of birth = hondarribia - spain, age = 54 years, arsenal career = 2018–2019, previous senior professional clubs managed : lorca deportiva: 2004–2006, almería: 2006–2008, valencia: 2008–2012, spartak moscow: 2012, sevilla: 2013–2016, paris saint-germain: 2016–2018  )
+
+                 role = former manager, date of birth= october 22nd, place of birth = strasbourg - france, age = 76 years, arsenal career = 1996–2018, previous senior professional clubs managed : nancy: 1984–1987, monaco: 1987–1994, nagoya grampus eight: 1995–1996)
+                

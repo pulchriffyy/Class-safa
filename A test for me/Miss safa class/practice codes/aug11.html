@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+
+    </head>
+    <body> 
+        <script>
+            let evenCount = 0;
+
+            for (let i = 1; i <= 20; i++) {
+                if (i % 2 === 0) {
+                    evenCount++; 
+            }
+            }
+
+            console.log("There are " + evenCount + " even numbers");
+            // input and twenty repeats
+
+            let input = prompt("Please enter an even number:");
+        const sn = parseInt(input);
+
+         
+            let mxlm = sn + 20; 
+            for (let i = sn + 2; i <= mxlm; i += 2) {
+                if (i % 2 === 0) {
+                  evenCount++; 
+                }
+            
+            
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Welcome to the hive of the Javascript</title>
+    <style>
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="heading">Welcome to the javascripter's hive</h2>
+    <h3>hello friend!</h3>
+
+    <p id="story">I've been waiting for you! </p>
+
+    <input type="text" id="name">
+    <h4>It left when i turned around, right?</h4>
+    <button onclick="finishTheStory()"> ... ? </button> 
+    <br><br>
+
+    <script>
+        // lesson1 - objective Sum of two num
+        console.log('Sum of 5 and 6')
+        
+        function sumOfTwoNumbers() {
+            let x = 5;
+            let y = 6;
+            let z = x + y;
+            return z;
+        }
+
+        let sum = sumOfTwoNumbers();
+        console.log("The Sum of x and y is " + sum);
+
+        // lesson two objective odd even
+        if (sum % 2 == 0) {
+            document.write(sum + " is an even number");
+        } else {
+            document.write(sum + " is an odd number");
+        }
+
+        // lesson 3  objective, create a div 
+        let div = document.createElement('div');
+        div.id = "paragraph";
+        div.className = "alert";
+        div.innerHTML = "<p>Congrats! You have created a div.</p>";
+        document.body.append(div);
+
+        let heading = document.getElementById("heading");
+        heading.innerHTML += " &#128512";
+
+        // lesson4 - objective- create a spooky story
+        function finishTheStory() {
+            document.getElementById("story").innerHTML = "Why are you pretending you can't see it standing right behind me?";
+        }
+    </script>
+</body>
+</html>

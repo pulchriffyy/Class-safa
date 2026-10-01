@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(209, 145, 93));
+                margin: 0;
+            }
+            .hero{
+                min-height: 100vh;
+                background-image: url('https://i1-e.pinimg.com/webp/1200x/1e/9a/bc/1e9abc1b25a8465b7a0775dd236ec773.webp');
+                background-size: cover;
+                display: flex;
+                align-items: center;
+               
+            }
+            #about{
+                background-image: url('https://i1-e.pinimg.com/1200x/11/4c/6e/114c6e67ee8c30bba0197f566dfd1a14.jpg');
+                background-size: cover;
+            }
+            section {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                padding: 60px 0;
+            }
+            .hide {
+                 display: none;
+                 }
+            .container {
+                width: 90%;
+                margin: auto;
+            }
+            .card {
+                background: white;
+                padding: 20px;
+                border-radius: 16px;
+                text-align: center;
+                margin: 10px;
+                flex: 1;
+            }
+            nav{
+                background-color: black;
+                padding: 15px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+            a{
+                color: bisque;
+                padding: 10px;
+                text-decoration: none;
+                font-size: larger;
+            }
+            .yum{
+                color: bisque;
+                display: inline-block;
+            }
+            h1{
+                color: blanchedalmond;
+                font-family:monospace;
+            }
+            .lead{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: bisque;
+            }
+            h2{
+                font-family: 'Lucida Sans', sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: xx-large;
+                text-align: center;
+            }
+            #projectAlert {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: bisque;
+                padding: 15px;
+                border-radius: 8px;
+                z-index: 2000;
+            }
+            .navbar-nav {
+                
+                display: flex;
+                
+                
+                padding: 0;
+            }
+            </style>
+    </head>
+        <body>
+            <div id="projectAlert" class="hide"></div>
+            <nav>
+                <div class="container">
+                    <h1 class="yum"> .Sarah </h1>
+                    <ul class="navbar-nav">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <header class="hero" id="hero">
+                <div class="container" style="text-align: center;">
+                    <h1 style="margin:0;">Hi! I'm <span id="myName"> Sarah s Tayyab!</span></h1>
+                    <p class="lead">I love learning, building, and creating fun projects!</p>
+                </div>
+            </header>
+
+            <section style="background-color: rgb(230, 194, 171);" id="about">
+                <div class="container">
+                    <h2 class="fw-bold mb-4">My story</h2>
+                    <div style="display: flex; flex-wrap: wrap;">
+                        <div class="card"><h5>Story</h5><p>Lorem ipsum dolor sit amet.</p></div>
+                        <div class="card"><h5>Creativity</h5><p>Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background-color: rgb(72, 116, 43);" id="projects">
+                <div class="container">
+                    <h2 style="color: white;">My work</h2>
+                    <div style="display: flex; flex-wrap: wrap;">
+                        <div class="card" data-proj="Project 1" style="cursor:pointer;"><h5>Project 1</h5><p>Description here.</p></div>
+                        <div class="card" data-proj="Project 2" style="cursor:pointer;"><h5>Project 2</h5><p>Description here.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <footer style="text-align: center; padding: 20px; background: black; color: white;">
+                <p>Made with love!</p>
+            </footer>
+
+            <script>
+                document.getElementById("projects").onclick = function(e) {
+                    let target = e.target.closest('[data-proj]');
+                    if (target) {
+                        let box = document.getElementById("projectAlert");
+                        box.textContent = "You clicked: " + target.dataset.proj;
+                        box.classList.remove("hide");
+                        setTimeout(() => box.classList.add("hide"), 3000);
+                    }
+                };
+
+                const h = document.querySelector(".hero"),
+                      b = document.querySelector(".yum"),
+                      t = () => {
+                          if (h && b) {
+                              b.classList.toggle("hide", h.getBoundingClientRect().bottom > 60);
+                          }
+                      };
+
+                window.addEventListener("scroll", t);
+                t();
+            </script>
+        </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .todo-container {
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        .input-section {
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            border-bottom: 5px solid #8d8d8d51;
+        }
+        button {
+            padding: 8px 12px;
+            background-color: #2d2d6d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border-bottom: 5px solid #5b58b7;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            background-color: #8496d172;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .delete-btn {
+            background-color: #a73843;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            border-bottom: 2px solid #7c242d;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+        <button onclick="document.querySelector('#taskList').innerHTML = '';" style="width: 100%; margin-top: 15px;">Clear All</button>
+    </div>
+
+    <script>
+        function addTask() {
+            const input = document.querySelector('#taskInput');
+            const taskText = input.value.trim();
+
+            if (taskText === '') {
+                alert('Please enter a task.');
+                return;
+            }
+
+            const ul = document.querySelector('#taskList');
+            const li = document.createElement('li');
+            
+            const span = document.createElement('span');
+            span.textContent = taskText;
+            li.appendChild(span);
+
+            const delBtn = document.createElement('button');
+            delBtn.textContent = 'Delete';
+            delBtn.className = 'delete-btn';
+            delBtn.onclick = function() {
+                deleteTask(delBtn);
+            };
+            li.appendChild(delBtn);
+
+            ul.appendChild(li);
+            input.value = '';
+        }
+
+        function deleteTask(button) {
+            const li = button.parentElement;
+            li.remove();
+        }
+
+        document.querySelector('#taskInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                addTask();
+            }
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,562 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/boot strap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery .min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootst rap.min.js"></script>
+        <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+<Style>
+            body{
+                margin: auto;
+                 font-family: "Big Shoulders", sans-serif;
+            }
+            
+
+            .topnav {
+            overflow: hidden;
+            background-color: #912121;
+             position:fixed;
+             width:100%;
+            z-index: 2;
+            
+            }
+             .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+            .topnav a {
+            float: left;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .topnav im{
+                padding-left: 60%;
+            }
+            .topnav a:hover {
+            background-color: #650f0f;
+            color: rgb(255, 255, 255);
+          
+            
+            }
+            .topnav a.active {
+            background-color: #700d0d;
+            color: rgb(255, 253, 253);
+           
+            }
+            .mySlides{
+               
+             width:100%;
+             height: auto;
+
+               position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1; 
+               
+                
+               
+            }
+        
+            
+            .h{
+                 position: relative;
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                z-index: -1;
+                
+            }
+            .s{
+            position: absolute;
+            text-align: left;
+          
+           font-weight: bold;
+
+           text-shadow: 5px 5px rgba(170, 12, 12, 0.416);
+            z-index: 2; 
+            
+            color: rgb(255, 255, 255);
+            font-size: 400vw;
+
+
+            }
+           
+            \\ .card-body img{
+                width: 100%;
+                max-width: 160px;
+                height: auto;
+                border-radius: 40px;
+                margin-bottom: 15px;
+            } \\
+          
+               .btn{
+                 background-color: #b95555;
+               }
+            .card-body{
+                 background: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+               height: 30%;
+               width: 40%;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+              margin: 10%;
+        }
+
+            .hidden{
+                visibility: hidden;
+            }
+            
+             
+             h7{
+                color: #fff;
+                
+             }
+             .what{
+                color: #fff;
+                background-color: #ff7e7e2f;
+                font-size:500%;
+             }
+             form{
+                background-color: #d18181;
+                
+               margin: 5%;
+             }
+             form input{
+                
+              width: 50%;
+              height: 20%;
+              border-width: 20px;
+              border-style:double;
+              margin-bottom: 1%;
+              border-color: #b07a7a;
+                
+             }
+                  .grid-container {
+                background-color: #782121;
+                display: flexbox;
+                
+               
+            }
+            textarea{
+               
+                width: 100%;
+              height: 30%;
+              
+              border-width: 20px;
+              border-style: double;
+border-color: #cd6262;
+            }
+             button{
+                background-color: #963c3c;
+                color: #ddd;
+                border-color: #ffffff00;
+                width: 100px;
+                
+             }
+             .wtr{
+                background-color: #a1a1a1;
+                text-align: center;
+                
+             }
+             .dropbtn {
+  background-color: #8e2828;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #552323;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+        background-color: #ddd;
+}
+
+
+.show {
+        display:block;
+}
+
+            </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#players">players</a>
+            <a href="#coaches">coaches</a>
+            <a href="#trophies">Trophies</a>
+            <a href="#contact">contact us</a>
+            <div class="dropdown">
+</div>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9530cd68-bd40-45d1-87db-fae48616468c/djivucl-98a42224-cb20-4de3-b014-c121ca406d6a.png/v1/fill/w_1192,h_670/arsenal_logo_white_png_transparent_by_wcxpert_djivucl-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6Ii9mLzk1MzBjZDY4LWJkNDAtNDVkMS04N2RiLWZhZTQ4NjE2NDY4Yy9kaml2dWNsLTk4YTQyMjI0LWNiMjAtNGRlMy1iMDE0LWMxMjFjYTQwNmQ2YS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.QFbYmDJ4I8z-XITCALUEbnICRB0k2DLK7gXTStWJ9sQ" width="100">
+           
+        </div>
+        <Section id="home">
+        <div class="h">
+        <img class="mySlides" src="arsenal real fc.webp" style="height:500px;">
+        <img class="mySlides" src="image.webp"style="height:500px;">
+        <img class="mySlides" src="CRAZED.webp"style="height:500px;">
+        <div class="s">
+                <br> <Br>
+        <h1> Arsenal </h1>
+        <h2> A guide to our players and managers.</h2>
+        </div>
+        </div>  
+        </Section>
+        <marquee width="100%" direction="right" height="100px">
+<img src="sponsors.webp"width="50%">
+</marquee>
+<br> <br> <br>
+
+
+</div>
+ <div class="grid-container">
+        <section id="players">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#declan">Declan Rice</a>
+    <a href="#Saka">Bukayo Saka</a>
+    <a href="#David">Davd Raya</a>
+  </div>
+           <div class="grid-container"></div>
+        
+        <div class="card-body">
+        <h5 class="card-title"> Victor Gyokeres</h5>
+       <!-- <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRmA4j8HFJCx0DTKZxXu7XVBEC-mY3UBkgAjd9rjzvM8T9mYRVuEpjUl9vP_m_akfhB">
+        --> <p class="card-text"> 
+                jersey number 14
+        </p>
+        
+        <!== button onclick="document.getElementbyId-->('gyo').classList.toggle('hidden')">See/Hide Profile</button>
+        <p class="hidden" id="gyo">jersey number = 14, date of birth= june 4th, place of birth = stolkhom - sweden, age = 28 years, teams played for= current, arsenal, previous 7 senior professional clubs : IF Brommapojkarna: 2015–2017   Brighton & Hove Albion: 2018–2021   FC St. Pauli (loan): 2019–2020   Swansea City (loan): 2020–2021   Coventry City: 2021 (loan),   then permanently from 2021–2023   Sporting CP: 2023–2025, 2025 - 2026 arsenal</p>
+        
+        
+</div>
+
+        
+        
+        </center>
+        <div id="Saka">
+                   <div class="card-body">
+                        <h5 class="card-title">Bukayo Saka</h5>
+      
+        <p class="card-text"> 
+                jersey number 7
+        </p>
+        
+
+        <!== button onclick="document.getElementbyId('sak').classList.toggle('hidden')">See/Hide Profile</button>
+        <p class="hidden" id="sak">jersey number = 7  date of birth = September 5, 2001   place of birth = Ealing, London - England  age = 24 years  teams played for = current, Arsenal FC </p>
+
+        </div>
+        </div>
+        </center>
+
+                <div class="card-body">
+                        
+        <div id="Rice">
+        <h5 class="card-title">Declan Rice</h5>
+        <p class="card-text"> 
+                jersey number 41
+        </p>
+        
+        <!== button onclick="document.getElementbyId-->('ric').classList.toggle('hidden')">See/Hide Profile</button>
+        <p class="hidden" id="ric">  jersey number = 41, date of birth= january 14th, place of birth = kingston upon thames - england, age = 27 years, teams played for= current, arsenal, previous senior professional clubs : west ham united: 2015–2023  
+</p>
+
+        </div>
+        </div>
+       
+                <div class="card-body">
+        <h5 class="card-title">William Saliba</h5>
+        <p class="card-text"> 
+               jersey number 2
+        </p>
+       
+<!-- button onclick="document.getElementbyId('gab').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="gab">  jersey number = 2, date of birth= march 24th, place of birth = bondy - france, age = 25 years, teams played for= current, arsenal, previous senior professional clubs : saint-étienne, nice, marseille
+</p> -->
+
+        </div>
+         
+                <div class="card-body">
+        <h5 class="card-title">Gabriel Magalhães</h5>
+        <p class="card-text"> 
+                jersey number 6
+        </p>
+       <!== button onclick="document.getElementbyId-->('gab').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="gab">  jersey number = 6, date of birth= december 19th, place of birth = são paulo - brazil, age = 28 years, teams played for= current, arsenal, previous senior professional clubs : avaí, lille, troyes, dinamo zagreb
+</p>
+
+
+        </div>
+         
+                <div class="card-body">
+        <h5 class="card-title">Kai Havertz</h5>
+        <p class="card-text"> 
+                jersey number  29
+        </p>
+        <!== button onclick="document.getElementbyId-->('hav').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="hav">  jersey number = 29, date of birth= june 11th, place of birth = aachen - germany, age = 27 years, teams played for= current, arsenal, previous senior professional clubs : bayer leverkusen, chelsea
+</p> </div>
+         <div id="David">
+                <div class="card-body">
+        <h5 class="card-title">David Raya</h5>
+        <p class="card-text"> 
+                jersey number 1
+        </p>
+        <!== button onclick="document.getElementbyId-->('ray').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="ray>  jersey number = 1, date of birth= september 15th, place of birth = barcelona - spain, age = 30 years, teams played for= current, arsenal, previous senior professional clubs : blackburn rovers, southport, brentford</p>
+</p>
+              
+        </div>
+        
+         
+<div class="card-body"> 
+        <h5 class="card-title">Ben White</h5>
+        <p class="card-text"> 
+                jersey number 4
+        </p>
+        <!== button onclick="document.getElementbyId-->('ben').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="ben">  jersey number = 4, date of birth= october 8th, place of birth = poole - england, age = 28 years, teams played for= current, arsenal, previous senior professional clubs : brighton & hove albion, newport county, peterborough united, leeds united
+</p> 
+
+
+        </div>
+        <br>
+         <br>
+                <div class="card-body">
+        <h5 class="card-title">Jurriën Timber</h5>
+                jersey number 12
+        </p>
+        <!== button onclick="document.getElementbyId-->('jur').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="jur">  jersey number = 12, date of birth= june 17th, place of birth = utrecht - netherlands, age = 25 years, teams played for= current, arsenal, previous senior professional clubs : ajax
+</p>
+
+        </div>
+         
+                <div class="card-body">
+        <h5 class="card-title">Gabriel Martinelli</h5>
+        <p class="card-text"> 
+                jersey number 11
+        </p>
+        <!== button onclick="document.getElementbyId-->('mar').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="mar">  jersey number = 11, date of birth= june 18th, place of birth = guarulhos - brazil, age = 25 years, teams played for= current, arsenal, previous senior professional clubs : ituano
+</p>
+
+        </div>
+         
+                <div class="card-body">
+        <h5 class="card-title">Leandro Trossard</h5>
+        <p class="card-text"> 
+                jersey number 19
+        </p>
+        <!== button onclick="document.getElementbyId-->('lea').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="lea">  jersey number = 19, date of birth= december 4th, place of birth = maasmechelen - belgium, age = 31 years, teams played for= current, arsenal, previous senior professional clubs : genk, lommel united, westerlo, ohl, brighton & hove albion
+</p>
+
+        </div>
+         
+                <div class="card-body">
+        <h5 class="card-title">Gabriel Jesus</h5>
+        <p class="card-text"> 
+                jersey number 9
+        </p>
+        <!== button onclick="document.getElementbyId-->('jes').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="jes">  jersey number = 9, date of birth= april 3rd, place of birth = são paulo - brazil, age = 29 years, teams played for= current, arsenal, previous senior professional clubs : palmeiras, manchester city
+</p>
+
+        </div>
+         
+                <div class="card-body">
+        <h5 class="card-title">Riccardo Calafiori</h5>
+        <p class="card-text"> 
+                jersey number 33
+        </p>
+        <!== button onclick="document.getElementbyId-->('ric').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="ric">  jersey number = 33, date of birth= may 19th, place of birth = rome - italy, age = 24 years, teams played for= current, arsenal, previous senior professional clubs : roma, genoa, basel, bologna
+</p>
+
+        </div>
+         
+                <div class="card-body">
+        <h5 class="card-title">Martín Zubimendi</h5>
+        <p class="card-text"> 
+                jersey number 36
+        </p>
+        <!== button onclick="document.getElementbyId-->('zub').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="zub">  jersey number = 36, date of birth= february 2nd, place of birth = san sebastián - spain, age = 27 years, teams played for= current, arsenal, previous senior professional clubs : real sociedad
+</p>
+</div></div></div>
+        </div>
+         </section>
+
+        <br>
+        <br>
+        <br>
+        <section id="coaches">
+        <h1>coaches (2000's to current)</h1>
+        
+        <div class="card-body">
+        <h5 class="card-title"> Mikel arteta </h5>
+        <p class="card-text"> 
+                2019- present
+        </p>
+         <!== button onclick="document.getElementbyId-->('art').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="art">  role = head coach, date of birth= march 26th, place of birth = san sebastián - spain, age = 44 years, arsenal career = 2019–present, previous managerial roles : manchester city (assistant coach): 2016–2019   </p>
+        <div class="card-body">
+        <h5 class="card-title">unai emery</h5>
+        <p class="card-text"> 
+                2018 - 2019
+        </p>
+                 <!== button onclick="document.getElementbyId-->('una').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="una">                 role = former head coach, date of birth= november 3rd, place of birth = hondarribia - spain, age = 54 years, arsenal career = 2018–2019, previous senior professional clubs managed : lorca deportiva: 2004–2006, almería: 2006–2008, valencia: 2008–2012, spartak moscow: 2012, sevilla: 2013–2016, paris saint-germain: 2016–2018 </p>
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">arsene wenger </h5>
+        <p class="card-text"> 
+        </p>
+         
+                     
+         <!== button onclick="document.getElementbyId-->('wen').classList.toggle('hidden')">See/Hide Profile</button>
+<p class="hidden" id="wen"> role = former manager, date of birth= october 22nd, place of birth = strasbourg - france, age = 76 years, arsenal career = 1996–2018, previous senior professional clubs managed : nancy: 1984–1987, monaco: 1987–1994, nagoya grampus eight: 1995–1996</p>  
+        <button onclick="hide()"> Hide </button>
+        </div>
+        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br
+        <section id="trophies">
+                <div class="grid-container">
+                <H1 class="what"> Recent Trophies </H1>
+
+                <img src="facup.webp" width="200">
+                
+                <img src="eplcup.png" width="205">
+                       <br> <h7>                      2025–26,
+2003–04
+2001–02 1997–98 (4 times), arsenal won 10 more trophies in the Old First Division, from 1930's to till the late 90's.
+</h7>
+ <h7>                      April 26, 1930   April 25, 1936   April 29, 1950    May 8, 1971      May 12, 1979     May 15, 1993    May 16, 1998     May 4, 2002    May 17, 2003    May 21, 2005   May 17, 2014     May 30, 2015   May 27, 2017   August 1, 2020 (14 times)
+</h7>
+        </section>
+        </div>
+        <Center> 
+                <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br>  <br><br><br><br><br><br><br><br
+                 
+               <section  id="contact">
+           <form action="https://formsubmit.co/3cc0653dfa4e4678fcaeb37842daf341" method="POST">
+                 <H1> Any shots to fire? Ask your questions down.</H1>
+                <input type="hidden" name="_subject" value="Arsenal Website Contact">
+               
+                <input type="hidden" name="_captcha" value="false">
+              
+                <input type="text" name="name" placeholder="Your Name" required>
+                
+                <input type="email" name="email" placeholder="Your Email" required>
+                
+                <textarea name="message" placeholder="Your message..." required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            </section>
+            <div class="wtr">
+                <h2>Please fill in this form if you have an requests, Glory to the gunners!</h2>
+                <hr>
+            <h5> lots of thanks to my family for supporting  and teaching me in this journey, may you accomplish yours.</h5>
+        </div>
+        </div>
+            </Center>
+</section>
+<br><br><br><br>
+        <div class="footer">
+                <br>
+                <h6> made with LOVE by sarah t tayyab, credits to google and pinterest for the images. And to form submit for the contact </h6>
+        <h7> 6/13/2026</h7>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for ( i = 0; i  < x.length; i++) {
+                x[i].style.display = "none  ";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block  ";
+                setTimeout(carousel, 3000);
+            }
+        
+
+                
+        function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+    <head>
+    </head>
+    <body>
+        
+        <script>
+            
+            let Name = prompt("Enter your name"); 
+            let Age = prompt("Enter your age"); 
+            let Question = prompt(`Is your name ${Name} and your age ${Age}? (yes/no)`);
+
+            Question0=prompt("Are you ready for the test? (yes/no)");
+            if(Question0=="yes" && Question=="yes"){
+                alert("Good luck!")
+            
+
+            
+            let Question1=prompt("What is the capital of France? (Very easy)");
+            let Answer1="Paris";
+                if(Question1==Answer1){
+                    alert("Correct answer");
+            }
+            let question2=prompt("What is the capital of United States? (easy)");
+            let answer2="Washington D.C.";
+                 if(question2==answer2){
+                    alert("Correct answer");
+            }
+            let question3=prompt("What is the capital of Pakistan?(medium)");
+            let answer3="Islamabad";
+                if(question3==answer3){
+                    alert("Correct answer");
+            }
+            let question4=prompt("What is the capital of Botswana?(hard)");
+            let answer4="Gaborone";
+            if(question4==answer4){
+                alert("Correct answer");
+            }
+            if(Question1==Answer1 && question2==answer2 && question3==answer3 && question4==answer4 ){
+                alert("Congrats! you got all of them correct.");
+            }
+            if(Question1!=Answer1 && question2!=answer2 && question3!=answer3 && question4!=answer4 ){
+                alert("Sorry. you got all of them Wrong, try again later");
+            }
+            }
+            else{
+                alert("Goodbye!");
+            }
+
+        </script>   
+    </body>
+</html>                                                               

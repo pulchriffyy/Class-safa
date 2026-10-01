@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <Style>
+                div{
+                    background-color: rgba(133, 133, 209, 0.299);
+                    height: 80%;
+                                   }
+                h1{
+                    font-size: 100;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+                }
+                h5{
+                    text-align: center;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+                }
+        </Style>
+    </head>
+    <body>
+        <div> <h1> Grade calculator </h1>
+            <br> <br>
+        <h5> Created by Sarah, A-F grade calculator/ EST 7/28/2026. made with care.</h5>
+    </div>
+            <script>
+
+
+let userInput = prompt("Please enter Your grade:");
+let number = Number(userInput)
+
+if (number >= 90 && number <= 100) {
+    alert("Grade: A+");
+    alert("Wonderful work!");
+}
+
+if (number >= 80 && number <= 90) {
+    alert("Grade: A");
+    alert("Excellent Work!");
+} 
+if ( number >= 70 && number <= 79) {
+    alert("Grade: B");
+    alert("Good, try better next time!");
+}
+if (number>= 60 && number <= 69) {
+    alert("Grade: C");
+    alert("There's room for improvement. Better luck next time.");
+}
+if (number >= 40 && number <= 59) {
+    alert("Grade: D");
+    alert("Do not give up!")
+}
+if (number >= 0 && number <= 39) {
+    alert("Grade: F");
+    alert("Faliures are the best lessons.");
+}
+if(number<0 || number>100){
+    alert("Grade: No Grade");
+    alert("Please input correct number");
+}
+
+    </script>
+    </body>
+</html>

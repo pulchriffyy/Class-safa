@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .h{
+                background-color: rgb(105, 14, 14);
+                margin: -1%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:xx-large;
+            }
+             .s{
+            position: absolute;
+            text-align: left;
+           
+            z-index: 2; 
+            text-align: center;
+            color: rgb(0, 0, 0);
+
+            }
+        </style>
+    </head>
+    <body>
+ <div class="h">
+        <img class="mySlides" src="https://i.pinimg.com/736x/02/14/d1/0214d1cda39d8745d1a0105fd81f2809.jpg" style="height:500px;">
+        <img class="mySlides" src="https://i.pinimg.com/736x/08/0f/67/080f67efe6a3f6832ded0e799c45df09.jpg"style="height:500px;">
+        <img class="mySlides" src="https://i.pinimg.com/1200x/b9/2a/77/b92a77150efe8c0a0935ea0213000922.jpg"style="height:500px;">
+        <div class="s">
+        <h1> The marias </h1>
+        <h2> No one noticed. </h2>
+        </div>
+        </div>
+        <script>
+             var myIndex = 0;
+            carousel();
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for ( i = 0; i  < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000);
+            }
+        </script>
+        </body>
+</html>

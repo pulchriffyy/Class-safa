@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website</title>
+    <style>
+    .pimg1, .pimg2, .pimg3 {
+        position: relative;
+        opacity: 0.70;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        }
+
+    .pimg1 {
+        background-image: url('https://i1-e.pinimg.com/webp/1200x/44/a9/76/44a976d8424354bfd910c89af8fc3e4c.webp');
+        min-height: 100%;
+        }
+
+    .pimg2 {
+        background-image: url('https://i.pinimg.com/736x/8a/19/2e/8a192eedc76e0e99fe1d47523af9636e.jpg');
+        min-height: 400px;
+        }
+
+    .pimg3 {
+        background-image: url('https://i.pinimg.com/736x/1c/44/2b/1c442bf2088bfcf84c6c03c34393a534.jpg');
+        min-height: 400px;
+        }
+
+        .section {
+        text-align: center;
+        padding: 50px 80px;
+        }
+
+        .section-light {
+        background-color: #f4f4f4;
+        color: #666;
+        }
+
+        .section-dark {
+        background-color: #282e34;
+        color: #ddd;
+        }
+
+        .ptext {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 27px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        }
+
+        .ptext .border {
+        background-color: #111;
+        color: #fff;
+        padding: 20px;
+        }
+
+        .ptext .border.trans {
+        background-color: transparent;
+        }
+
+        @media(max-width:568px){
+        .pimg1, .pimg2, .pimg3 {
+            background-attachment: scroll;
+        }
+        }
+
+        </style>
+    
+    </span><br>
+  </head>
+  <body>
+    <section class="section section-dark">
+      <h2>Pearl of the orient seas.</h2>
+      <p>A philippines related website about traveling to the 'Home of the Green Revolution' or in  other words, philippines.</p>
+    </section>
+    <div class="pimg3">
+      <div class="ptext">
+        <span class="border trans">Pearl of the orient seas.</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* NEW: Container to put buttons side-by-side */
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centers the row of buttons */
+    gap: 10px;               /* Space between buttons */
+    margin-top: 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .image-placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0160ce89;
+    font-weight: bold;
+    overflow: hidden; /* Keeps image inside borders */
+  }
+  .content {
+    flex: 1;
+  }
+  h1 {
+    color: #0358b97e;
+    margin-top: 0;
+  }
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: auto;
+  }
+  button {
+    border-radius: 8px; 
+    padding: 10px 20px;
+    background-color: #78b6f8;
+    border: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.5rem; /* Slightly reduced so both buttons fit easily */
+    cursor: pointer;   /* Adds hand pointer on hover */
+  }
+  .aa{
+    padding-left: 20%;
+  }
+  </style>
+</head>
+<body>
+
+    <!-- WRAPPED: Buttons are now inside the side-by-side flex container -->
+    <div class="button-container">
+        <button class="even-button" onclick="gen()">Generate Even Numbers</button>
+        <button class="odd-button" onclick="gon()">Generate Odd Numbers</button>
+    </div>
+
+    <div class="container">
+        <div class="image-placeholder">
+            <img src="https://d2cvjmix0699s1.cloudfront.net/resources/elephango/resourceFull/even-odd-rules-1-11235-full.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Even and Odd signs">
+        </div>
+        
+        <div class="content">
+            <h1>Even odd number generator.</h1>
+            <p>this generates numbers either even or odd and provides more numbers until it reaches a added 50 limit.</p>
+        </div>
+    </div>
+ <div class="aa">
+  <h1> how to check the numbers?</h1>
+  
+  <p>Enter an even or odd number. To see the list generated, right click and select "Inspect" and then open console.</p>
+  </div>
+  <footer>
+    &copy; 2026, made by sarah syeda tayyab. All rights reserved.
+  </footer>
+
+    <script>
+    function gen() {
+        let input = prompt("Please enter an even number:");
+        const sn = parseInt(input);
+       
+         if (isNaN(sn) || sn % 2 !== 0) {
+            alert("Error: The number you entered isn't valid.");
+        } else {
+            let mxlm = sn + 50; 
+            for (let i = sn + 2; i <= mxlm; i += 2) {
+                console.log(i);
+            }
+        }
+        console.log("even numbers are displayed above...")
+    }
+    
+    function gon() {
+        let inp = prompt("Please enter an odd number:");
+        const jn = parseInt(inp);
+        if (isNaN(jn) || jn % 2 === 0) {
+            alert("Error: The number you entered isn't valid.");
+        } else {
+            let mxlsm = jn + 50;
+            for (let i = jn + 2; i <= mxlsm; i += 2) {
+                console.log(i);
+            }
+        }
+        console.log("odd numbers are displayed above...")
+    }
+    </script>
+</body>
+</html>
